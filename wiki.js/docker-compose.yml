@@ -1,0 +1,16 @@
+version: "3"
+services:
+  wiki:
+    image: requarks/wiki:2
+    container_name: my_wiki
+    environment:
+      TZ: Asia/Jakarta
+      DB_TYPE: sqlite
+      DB_FILEPATH: wiki.db
+    restart: unless-stopped
+    volumes:
+      - ./wiki/data:/home
+      - ./wiki/config.yml:/wiki/config.yml
+    ports:
+      - "80:3000"
+      # - "443:3443" 
