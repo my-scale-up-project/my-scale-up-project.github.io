@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Scale Up Project
 > This is where i will share my experience with deployment or something else. I hope this will be helpful for you.
 
